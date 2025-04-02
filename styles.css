@@ -529,3 +529,99 @@ footer .container {
         grid-template-columns: 1fr;
     }
 }
+
+/* Remove progress bar styles */
+.progress-container, .progress-bar {
+    display: none;
+}
+
+/* Enhanced sticky sidebar */
+.resume-nav {
+    width: 25%;
+    min-width: 220px;
+    position: sticky;
+    top: var(--spacing-lg);
+    align-self: flex-start;
+    max-height: 80vh; /* Limit height to ensure it doesn't go off-screen */
+    overflow-y: auto; /* Add scrolling if needed */
+}
+
+.resume-sections {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
+
+.resume-sections li {
+    border-bottom: 1px solid #eee;
+}
+
+.resume-sections li:last-child {
+    border-bottom: none;
+}
+
+.resume-sections a {
+    padding: var(--spacing-md);
+    display: block;
+    color: var(--neutral-dark);
+    transition: var(--transition);
+}
+
+.resume-sections a:hover,
+.resume-sections a.active {
+    background-color: var(--light-dark-green);
+    color: var(--white);
+    padding-left: 1.5rem;
+}
+/* Document viewer styles for PDFs/PPTs */
+.document-container {
+    margin: var(--spacing-lg) 0;
+}
+
+.document-container h4 {
+    color: var(--dark-green);
+    margin-bottom: var(--spacing-md);
+}
+
+.document-viewer {
+    width: 100%;
+    height: 600px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.download-link {
+    display: inline-block;
+    margin-top: var(--spacing-sm);
+    background-color: var(--light-dark-green);
+    color: var(--white);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+.download-link:hover {
+    background-color: var(--dark-green);
+    color: var(--white);
+}
+
+/* Responsive adjustments for document viewer */
+@media (max-width: 900px) {
+    .document-viewer {
+        height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .document-viewer {
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .document-viewer {
+        height: 350px;
+    }
+}
