@@ -3,140 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etash Chandran | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <title>Etash Chandran - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/sidebar.js" defer></script>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Etash Chandran</h1>
+            <h1 class="logo">Etash Chandran</h1>
             <nav>
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
+                    <li><a href="blog/index.html">Blog</a></li>
+                    <li><a href="portfolio.html">Advertising Portfolio</a></li>
                     <li><a href="other.html">Other Information</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <div class="container resume-container">
-            <div class="resume-nav">
-                <!-- <div class="progress-container">
-                    <div class="progress-bar" id="resumeProgress"></div>
-                </div> -->
-                <ul class="resume-sections">
-                    <li><a href="#education" class="section-link active" data-section="education">Education</a></li>
-                    <li><a href="#experience" class="section-link" data-section="experience">Professional Experience</a></li>
-                    <li><a href="#projects" class="section-link" data-section="projects">Projects</a></li>
-                    <li><a href="#activities" class="section-link" data-section="activities">Activities</a></li>
-                    <li><a href="#honors" class="section-link" data-section="honors">Honors</a></li>
-                    <li><a href="#skills" class="section-link" data-section="skills">Skills</a></li>
-                </ul>
-            </div>
-            <div class="resume-content">
-                <section id="education" class="resume-section active">
-                    <h2>Education</h2>
-                    <div class="resume-item">
-                        <h3>The University of Texas at Austin</h3>
-                        <p class="meta">Bachelor of Science in Advertising & Business Analytics</p>
-                        <p class="date">Expected Graduation: May 2026</p>
-                        <p><a href="resume/education.html" class="detail-link">More Details →</a></p>
-                    </div>
-                </section>
+    <main class="home-container">
+        <aside class="resume-sidebar">
+            <ul>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#leadership">Leadership & Activities</a></li>
+                <li><a href="#additional">Additional Information</a></li>
+            </ul>
+        </aside>
 
-                <section id="experience" class="resume-section">
-                    <h2>Professional Experience</h2>
-                    <div class="resume-item">
-                        <h3>Marketing and Research Intern</h3>
-                        <p class="meta">U.S. Department of Commerce</p>
-                        <p class="date">Spring 2025</p>
-                        <p>Conducted market research and analysis of consumer trends to inform marketing strategies.</p>
-                        <p><a href="resume/experience.html" class="detail-link">More Details →</a></p>
-                    </div>
-                </section>
+        <div class="resume-content">
+            <section id="education" class="resume-section">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>The University of Texas at Austin</h3>
+                    <p>Bachelor of Science, Advertising</p>
+                    <p>Bachelor of Business Administration, Business Analytics</p>
+                    <p>Moody College of Communications Honors Program</p>
+                    <p>Overall GPA: 3.95</p>
+                    <p>Expected: May 2026</p>
+                </div>
+                <div class="education-item">
+                    <h3>Prague University of Economics</h3>
+                    <p>Management in Prague, Czech Republic</p>
+                    <p>June 2024 - July 2024</p>
+                </div>
+                <a href="experience/education.html" class="section-link">More Details</a>
+            </section>
 
-                <section id="projects" class="resume-section">
-                    <h2>Projects</h2>
-                    <div class="resume-item">
-                        <h3>National Student Advertising Competition</h3>
-                        <p class="meta">Strategy Director</p>
-                        <p class="date">2025</p>
-                        <p>Developed strategic advertising campaign</p>
-                        <p><a href="resume/projects.html#nsac" class="detail-link">More Details →</a></p>
-                    </div>
-                    <div class="resume-item">
-                        <h3>Kay Bailey Hutchison Energy Finance Case Competition</h3>
-                        <p class="meta">Financial Analyst</p>
-                        <p class="date">2025</p>
-                        <p>Created investment memo for the acquisition of Powell Industries, Inc.</p>
-                        <p><a href="resume/projects.html#kbh" class="detail-link">More Details →</a></p>
-                    </div>
-                </section>
+            <section id="experience" class="resume-section">
+                <h2>Experience</h2>
+                <div class="experience-item">
+                    <h3>U.S. Department of Commerce</h3>
+                    <p class="job-title">Global Tech Marketing and Research Intern</p>
+                    <p class="job-period">Jan 2025 - Present</p>
+                    <ul>
+                        <li>Managed and simplified website using Drupal CMS to enhance time on page</li>
+                        <li>Researched technology market trends to improve outreach to clients</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>We Go Public</h3>
+                    <p class="job-title">Social Media Intern</p>
+                    <p class="job-period">Jan 2024 - April 2024</p>
+                    <ul>
+                        <li>Utilized Facebook, X, and Instagram for digital marketing to engage with clients and write 2 blog articles/week</li>
+                        <li>Designed graphics for WordPress website to promote internship program, resulting in 10% increase in applications</li>
+                    </ul>
+                </div>
+                <a href="experience/work.html" class="section-link">More Details</a>
+            </section>
 
-                <section id="activities" class="resume-section">
-                    <h2>Activities</h2>
-                    <div class="resume-item">
-                        <h3>Hindu Students Association</h3>
-                        <p class="meta">Media Chair</p>
-                        <p class="date">2023 - Present</p>
-                        <p>Description of your activities and contributions.</p>
-                        <p><a href="resume/activities.html" class="detail-link">More Details →</a></p>
-                    </div>
-                </section>
+            <section id="projects" class="resume-section">
+                <h2>Projects</h2>
+                <div class="project-item">
+                    <h3>Stukent Software Digital Marketing Siminternship</h3>
+                    <p class="project-period">Sept 2024 - Dec 2024</p>
+                    <ul>
+                        <li>Developed digital marketing strategy based on research to revitalize sales of the Buhi American Dream product line</li>
+                        <li>Allocated advertising budget efficiently, resulting in best-in-class $335,000 in profit, 3.78x return ad on spend</li>
+                    </ul>
+                </div>
+                <div class="project-item">
+                    <h3>IBM Professional Data Analytics Certificate</h3>
+                    <p class="project-period">May 2024 - Nov 2024</p>
+                    <ul>
+                        <li>Analyzed SpaceX launch data using machine learning techniques (Scikit-learn) to predict launch success 83% correctly</li>
+                        <li>Examined data using Python and SQL for exploratory data analysis and data management</li>
+                    </ul>
+                </div>
+                <a href="experience/projects.html" class="section-link">More Details</a>
+            </section>
 
-                <section id="honors" class="resume-section">
-                    <h2>Honors & Awards</h2>
-                    <div class="resume-item">
-                        <h3>Dean's List</h3>
-                        <p class="meta">The University of Texas at Austin</p>
-                        <p class="date">2023 - 2024</p>
-                        <p><a href="resume/honors.html" class="detail-link">More Details →</a></p>
-                    </div>
-                </section>
+            <section id="leadership" class="resume-section">
+                <h2>Leadership & Activities</h2>
+                <div class="leadership-item">
+                    <h3>National Student Advertising Competition</h3>
+                    <p class="role">Strategy Director: Client: AT&T</p>
+                    <p class="role-period">January 2025 - Present</p>
+                    <ul>
+                        <li>Planned a national advertising campaign for AT&T to revitalize brand connection with Gen Z audience</li>
+                        <li>Directed strategy department to conduct secondary and primary research about target markets and messaging</li>
+                    </ul>
+                </div>
+                <div class="leadership-item">
+                    <h3>Hindu Students Association</h3>
+                    <p class="role">Media Chair</p>
+                    <p class="role-period">May 2024 - Present</p>
+                    <ul>
+                        <li>Achieved greater promotion of Navratri event through Instagram Reels video production, measured by 17,000 views</li>
+                        <li>Publicized organization on social media resulting in a 10% increase in attendance</li>
+                    </ul>
+                </div>
+                <a href="experience/leadership.html" class="section-link">More Details</a>
+            </section>
 
-                <section id="skills" class="resume-section">
-                    <h2>Skills</h2>
-                    <div class="skills-container">
-                        <div class="skill-category">
-                            <h3>Technical Skills</h3>
-                            <ul>
-                                <li>HTML, CSS, JavaScript</li>
-                                <li>Data Analysis</li>
-                                <li>Digital Marketing</li>
-                                <li>Market Research</li>
-                            </ul>
-                        </div>
-                        <div class="skill-category">
-                            <h3>Software</h3>
-                            <ul>
-                                <li>Microsoft Office Suite</li>
-                                <li>Adobe Creative Suite</li>
-                                <li>Google Analytics</li>
-                                <li>Social Media Platforms</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <p><a href="resume/skills.html" class="detail-link">More Details →</a></p>
-                </section>
-            </div>
+            <section id="additional" class="resume-section">
+                <h2>Additional Information</h2>
+                <div class="additional-item">
+                    <h3>Computer Skills</h3>
+                    <p>Python, R, Oracle SQL, Tableau, Excel, HTML, CSS, JavaScript, Git, Prompt Engineering, ReactJS, Google Trend Data</p>
+                </div>
+                <div class="additional-item">
+                    <h3>Certifications</h3>
+                    <p>IBM Professional Data Analytics (November 2024), Google Analytics 4 (December 2024), Google Ads Search (December 2024)</p>
+                </div>
+                <a href="experience/additional.html" class="section-link">More Details</a>
+            </section>
         </div>
     </main>
 
     <footer>
         <div class="container">
-            <div class="contact-info">
-                <h3>Connect With Me</h3>
-                <ul class="social-links">
-                    <li><a href="mailto:your.email@example.com" target="_blank">Email</a></li>
-                    <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a></li>
-                </ul>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2025 Etash Chandran. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/etashc" target="_blank">LinkedIn</a>
+                <a href="https://instagram.com/" target="_blank">Instagram</a>
+                <a href="mailto:etashchandran@utexas.edu">Email</a>
             </div>
         </div>
     </footer>
