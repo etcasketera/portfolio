@@ -3,42 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Other Information | Etash Chandran</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Other Information - Etash Chandran</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Etash Chandran</h1>
+            <h1 class="logo">Etash Chandran</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Me</a></li>
+                    <li><a href="blog/index.html">Blog</a></li>
+                    <li><a href="portfolio.html">Advertising Portfolio</a></li>
                     <li><a href="other.html" class="active">Other Information</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <div class="container other-container">
-            <h2>Other Information</h2>
-            <p>This page will be filled in later.</p>
-        </div>
+    <main class="container other-container">
+        <h2 class="page-title">Other Information</h2>
+        
+        <section class="github-section">
+            <h3>GitHub Projects</h3>
+            <p class="section-intro">Explore some of my technical projects and code repositories on GitHub. These projects showcase my skills in data analysis, web development, and more.</p>
+            
+            <div class="github-projects">
+                <div class="github-project">
+                    <div class="project-header">
+                        <h4>Marketing Analytics Dashboard</h4>
+                        <a href="https://github.com/username/marketing-analytics-dashboard" target="_blank" class="github-link">View on GitHub</a>
+                    </div>
+                    <p class="project-description">An interactive dashboard built with Python and Dash that visualizes marketing campaign performance data. Features include ROI calculation, channel attribution, and consumer segmentation analysis.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Dash</span>
+                        <span class="tech-tag">Plotly</span>
+                    </div>
+                </div>
+                
+                <div class="github-project">
+                    <div class="project-header">
+                        <h4>Social Media Sentiment Analyzer</h4>
+                        <a href="https://github.com/username/sentiment-analyzer" target="_blank" class="github-link">View on GitHub</a>
+                    </div>
+                    <p class="project-description">A tool that analyzes sentiment in social media posts using natural language processing. Helps brands understand public perception and track changes over time.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">NLTK</span>
+                        <span class="tech-tag">scikit-learn</span>
+                        <span class="tech-tag">Twitter API</span>
+                    </div>
+                </div>
+                
+                <div class="github-project">
+                    <div class="project-header">
+                        <h4>Customer Journey Visualization Tool</h4>
+                        <a href="https://github.com/username/customer-journey-viz" target="_blank" class="github-link">View on GitHub</a>
+                    </div>
+                    <p class="project-description">A web application that maps customer interactions across touchpoints, helping marketers identify friction points and opportunities for optimization.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">D3.js</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                </div>
+                
+                <div class="github-project">
+                    <div class="project-header">
+                        <h4>AdTech Performance Analysis</h4>
+                        <a href="https://github.com/username/adtech-analysis" target="_blank" class="github-link">View on GitHub</a>
+                    </div>
+                    <p class="project-description">A suite of Python scripts for analyzing performance data from various advertising platforms. Provides unified metrics and comparative analysis.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">Google Ads API</span>
+                        <span class="tech-tag">Facebook Ads API</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="certifications-section">
+            <h3>Certifications</h3>
+            <div class="certifications-list">
+                <div class="certification">
+                    <h4>IBM Professional Data Analytics</h4>
+                    <p class="certification-date">November 2024</p>
+                    <p class="certification-description">Comprehensive certification covering data analysis methodologies, statistical techniques, and visualization using Python and SQL.</p>
+                </div>
+                
+                <div class="certification">
+                    <h4>Google Analytics 4</h4>
+                    <p class="certification-date">December 2024</p>
+                    <p class="certification-description">Proficiency in using Google Analytics 4 to track and analyze website traffic, user behavior, and conversion metrics.</p>
+                </div>
+                
+                <div class="certification">
+                    <h4>Google Ads Search</h4>
+                    <p class="certification-date">December 2024</p>
+                    <p class="certification-description">Expertise in creating and optimizing search campaigns in Google Ads to maximize performance and ROI.</p>
+                </div>
+                
+                <div class="certification">
+                    <h4>Google Ads Measurement</h4>
+                    <p class="certification-date">December 2024</p>
+                    <p class="certification-description">Advanced skills in measuring and analyzing the effectiveness of Google Ads campaigns, including conversion tracking and attribution.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="skills-section">
+            <h3>Technical Skills</h3>
+            <div class="skills-categories">
+                <div class="skills-category">
+                    <h4>Programming & Data Analysis</h4>
+                    <ul class="skills-list">
+                        <li>Python (Pandas, NumPy, Matplotlib, Scikit-learn)</li>
+                        <li>R for statistical analysis</li>
+                        <li>Oracle SQL Developer</li>
+                        <li>Tableau for data visualization</li>
+                        <li>Excel (PIVOT TABLE, Visualization)</li>
+                    </ul>
+                </div>
+                
+                <div class="skills-category">
+                    <h4>Web Development</h4>
+                    <ul class="skills-list">
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>ReactJS</li>
+                        <li>Git version control</li>
+                        <li>Ruby</li>
+                    </ul>
+                </div>
+                
+                <div class="skills-category">
+                    <h4>Marketing & Design Tools</h4>
+                    <ul class="skills-list">
+                        <li>Google Analytics 4</li>
+                        <li>Google Ads Platform</li>
+                        <li>Social media management tools</li>
+                        <li>Canva and Figma for design</li>
+                        <li>Video editing software</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
         <div class="container">
-            <div class="contact-info">
-                <h3>Connect With Me</h3>
-                <ul class="social-links">
-                    <li><a href="mailto:your.email@example.com" target="_blank">Email</a></li>
-                    <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a></li>
-                </ul>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2025 Etash Chandran. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/etashc" target="_blank">LinkedIn</a>
+                <a href="https://instagram.com/" target="_blank">Instagram</a>
+                <a href="mailto:etashchandran@utexas.edu">Email</a>
             </div>
         </div>
     </footer>
